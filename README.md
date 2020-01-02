@@ -1,7 +1,9 @@
-# Lab2-014336816-
+# Grubhub Prototype
 
-1)Download the folder
-2) Run npm install in every folder 
-3)To run Backend : run: node index.js
-4)To run Frontend: run: npm start
-5)To run Kafka-Backend: node server.js
+### To run the Project
+*  Start three Terminals- Backend, Frontend, Kafka-Backend (Prereq: NodeJS installed on the machine)
+*  Run command "npm install" in all the three terminals
+*  In the Terminal of Backend Folder- run command "node index.js"
+*  In the Terminal of Kafka-Backend Folder- run command "node server.js"
+*  In the Terminal of Frontend Folder- run command "npm start"
+
