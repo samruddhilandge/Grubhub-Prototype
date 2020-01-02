@@ -22,14 +22,13 @@ var passport = require("passport");
 require("./config/passport");
 
 mongoose.connect(
-  "mongodb+srv://samruddhi:samruddhi@sample-lgacm.mongodb.net/grubhub?retryWrites=true&w=majority",
-  { useNewUrlParser: true, useUnifiedTopology: true }
+  //put here the connection string to mongodb
 );
 
-// const multer = require("multer");
+const multer = require("multer");
 
 app.use(passport.initialize());
-app.use(cors({ origin: "http://18.191.87.112:3000", credentials: true })); //18.224.251.39
+app.use(cors({ origin: ";ocalhost:3000", credentials: true }));
 
 app.use(
   session({
@@ -44,7 +43,7 @@ app.use(
 app.use(bodyParser.json());
 
 app.use(function(req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "http://18.191.87.112:3000"); //http://18.224.251.39:3000
+  res.setHeader("Access-Control-Allow-Origin", "localhost:3000"); 
   res.setHeader("Access-Control-Allow-Credentials", "true");
   res.setHeader(
     "Access-Control-Allow-Methods",
