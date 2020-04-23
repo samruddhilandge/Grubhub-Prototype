@@ -1,10 +1,7 @@
 // var Order = require("../models/Order");
 var Order = require("../models/Order");
 var mongoose = require("mongoose");
-// mongoose.connect(
-//   "mongodb+srv://samruddhi:samruddhi@sample-lgacm.mongodb.net/grubhub?retryWrites=true&w=majority",
-//   { useNewUrlParser: true, useUnifiedTopology: true }
-// );
+
 function handle_request(msg, callback) {
   console.log("In Order Confirm Request");
 
